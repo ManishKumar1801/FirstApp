@@ -16,7 +16,7 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
-    buildFeauures{
+    buildFeatures{
         dataBinding true
         viewBinding true
     }
