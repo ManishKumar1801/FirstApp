@@ -1,11 +1,13 @@
 package com.example.kabir
 
+
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.example.kabir.databinding.ActivityMainBinding
+
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -20,6 +22,9 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this@MainActivity, "click on Ajay", Toast.LENGTH_SHORT).show()
                 val intent=Intent(this@MainActivity,DetailActivity::class.java)
                 intent.putExtra("ajay","ajay")
+
+                intent.putExtra("image",R.drawable.img)
+
                 startActivity(intent)
             }
             Akshay.setOnClickListener {
