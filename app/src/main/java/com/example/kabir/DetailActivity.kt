@@ -16,7 +16,7 @@ class DetailActivity : AppCompatActivity() {
 
         with(binding){
 
-            val name=intent.getStringExtra("ajay")
+            val name=intent.getStringExtra("name")
             if (name=="ajay"){
                 Discription.text="ajay devgani s veryg ood avtor hei s nerysk fjfus kdkfkjj sgdtyrhfn jksjfjfkfk"
                 val bundle = intent.extras
@@ -26,6 +26,15 @@ class DetailActivity : AppCompatActivity() {
                     imagevalue = bundle.getInt("image")
                 }
                 image.setImageResource(imagevalue)
+            }
+            if (name=="akshy"){
+                Discription.text="akshy kumar is very g ood avtor hei s nerysk fjfus kdkfkjj sgdtyrhfn jksjfjfkfk"
+            }
+            if (name=="ajay"){
+                Discription.text="ajay devgani s veryg ood avtor hei s nerysk fjfus kdkfkjj sgdtyrhfn jksjfjfkfk"
+            }
+            if (name=="ajay"){
+                Discription.text="ajay devgani s veryg ood avtor hei s nerysk fjfus kdkfkjj sgdtyrhfn jksjfjfkfk"
             }
         }
     }

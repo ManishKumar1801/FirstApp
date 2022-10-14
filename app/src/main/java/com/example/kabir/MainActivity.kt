@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
             Ajay.setOnClickListener {
                 Toast.makeText(this@MainActivity, "click on Ajay", Toast.LENGTH_SHORT).show()
                 val intent=Intent(this@MainActivity,DetailActivity::class.java)
-                intent.putExtra("ajay","ajay")
+                intent.putExtra("name","ajay")
 
                 intent.putExtra("image",R.drawable.img)
 
@@ -30,6 +30,8 @@ class MainActivity : AppCompatActivity() {
             Akshay.setOnClickListener {
                 Toast.makeText(this@MainActivity, "click on Akshy", Toast.LENGTH_SHORT).show()
                 val intent=Intent(this@MainActivity,DetailActivity::class.java)
+                intent.putExtra("name","akshy")
+                intent.putExtra("image",R.drawable.img_1)
                 startActivity(intent)
             }
             Salman.setOnClickListener {
