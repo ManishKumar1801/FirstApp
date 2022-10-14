@@ -16,7 +16,11 @@ class DetailActivity : AppCompatActivity() {
         binding=DataBindingUtil.setContentView(this,R.layout.activity_detail)
 
         with(binding){
-            Discription.text="ajay devgani s veryg ood avtor hei s nerysk fjfus kdkfkjj sgdtyrhfn jksjfjfkfk"
+
+            val name=intent.getStringExtra("ajay")
+            if (name=="ajay"){
+                Discription.text="ajay devgani s veryg ood avtor hei s nerysk fjfus kdkfkjj sgdtyrhfn jksjfjfkfk"
+            }
         }
     }
 }

@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
             Ajay.setOnClickListener {
                 Toast.makeText(this@MainActivity, "click on Ajay", Toast.LENGTH_SHORT).show()
                 val intent=Intent(this@MainActivity,DetailActivity::class.java)
+                intent.putExtra("ajay","ajay")
                 startActivity(intent)
             }
             Akshay.setOnClickListener {
